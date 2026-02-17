@@ -1,0 +1,54 @@
+Brief Statistical Report for NSMES1988updated.csv
+--------------------------------------------
+
+Transformed columns: 'age' multiplied by 10; 'income' multiplied by 10000.
+
+Basic statistics (computed explicitly):
+
+Age statistics:
+ - count: 4406
+ - mean: 74.02405810258738
+ - median: 73.0
+ - std: 6.334050278177129
+ - min: 66.0
+ - 25%: 69.0
+ - 50%: 73.0
+ - 75%: 78.0
+ - max: 109.0
+
+Income statistics:
+ - count: 4406
+ - mean: 25271.320467544258
+ - median: 16981.5
+ - std: 29246.476177828597
+ - min: -10125.0
+ - 25%: 9121.5
+ - 50%: 16981.5
+ - 75%: 31728.5
+ - max: 548351.0
+
+Describe() output summary comparison:
+
+Age comparisons:
+ - count: basic=4406, describe=4406.0, equal=True
+ - mean: basic=74.02405810258738, describe=74.02405810258738, equal=True
+ - std: basic=6.334050278177129, describe=6.334050278177129, equal=True
+ - min: basic=66.0, describe=66.0, equal=True
+ - 25%: basic=69.0, describe=69.0, equal=True
+ - 50%: basic=73.0, describe=73.0, equal=True
+ - 75%: basic=78.0, describe=78.0, equal=True
+ - max: basic=109.0, describe=109.0, equal=True
+
+Income comparisons:
+ - count: basic=4406, describe=4406.0, equal=True
+ - mean: basic=25271.320467544258, describe=25271.320467544258, equal=True
+ - std: basic=29246.476177828597, describe=29246.476177828597, equal=True
+ - min: basic=-10125.0, describe=-10125.0, equal=True
+ - 25%: basic=9121.5, describe=9121.5, equal=True
+ - 50%: basic=16981.5, describe=16981.5, equal=True
+ - 75%: basic=31728.5, describe=31728.5, equal=True
+ - max: basic=548351.0, describe=548351.0, equal=True
+
+Notes:
+ - The `describe()` summary should match the explicit basic statistics for numeric measures (count, mean, std, min, 25%, 50%, 75%, max).
+ - Differences may arise due to NaN handling or floating-point rounding; comparisons use a tolerance for equality.

@@ -1,0 +1,26 @@
+Source file: NSMES1988_analysis_df.csv
+Rows: 4406
+
+Age x Gender distribution (counts):
+age_group,female,male
+65-69,723,554
+70-74,783,560
+75-79,586,364
+80-84,337,188
+85-89,138,77
+90-94,48,29
+95-99,11,5
+100-104,1,1
+105-109,1,0
+
+Health x Gender counts:
+health,female,male
+average,2093,1416
+excellent,193,150
+poor,342,212
+
+Health x Gender column %:
+health,female,male
+average,0.7964,0.7964
+excellent,0.0734,0.0844
+poor,0.1301,0.1192

@@ -1,0 +1,45 @@
+Plotting library choice: Matplotlib + Seaborn
+
+Reasons for choice:
+- Matplotlib is the standard Python plotting library with strong flexibility.
+- Seaborn is built on Matplotlib and provides high-level statistical plotting with attractive defaults (heatmaps, boxplots, distribution plots).
+- Together they enable easy creation of heatmaps, distribution plots, and correlation visuals required for this analysis.
+
+Data source: NSMES1988_analysis_df.csv
+Rows: 4406, Columns: 19
+
+Week 3: Categorical analysis (Health and Region)
+- Heatmap `heatmap_health_region_counts.png` shows counts of observations for each Health × Region cell.
+- Stacked bar `stacked_health_by_region_prop.png` shows proportion of each health status within each region.
+
+Observations:
+- Most common health status across regions: average
+  - average: 3509 records
+  - poor: 554 records
+  - excellent: 343 records
+
+Week 4: Numerical analysis and correlation
+- Correlation matrix saved to `correlation_heatmap.png` and numeric correlation table below:
+
+Top correlations (absolute value sorted):
+- hospital vs emergency: corr = 0.48
+- ovisits vs novisits: corr = 0.47
+- visits vs chronic: corr = 0.26
+- income vs school: corr = 0.26
+- hospital vs visits: corr = 0.24
+- chronic vs hospital: corr = 0.23
+- visits vs nvisits: corr = 0.23
+- emergency vs chronic: corr = 0.20
+
+Additional plots: age_distribution.png, income_distribution.png, visits_by_health_boxplot.png
+
+Summary observations:
+- Mean visits for average: 5.51
+- Mean visits for excellent: 3.43
+- Mean visits for poor: 8.90
+- Mean income for average: 25519.90
+- Mean income for excellent: 32774.11
+- Mean income for poor: 19051.62
+- Mean age for average: 73.85
+- Mean age for excellent: 73.10
+- Mean age for poor: 75.70

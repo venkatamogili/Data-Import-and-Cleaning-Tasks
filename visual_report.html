@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NSMES1988 Visual Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1,h2 { color: #2c3e50 }
+    .plot { margin: 20px 0; }
+    img { max-width: 100%; height: auto; border: 1px solid #ddd; padding: 4px; background: #fff }
+    .note { color: #555; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
+  </style>
+</head>
+<body>
+  <h1>NSMES1988 Visual Report</h1>
+  <p class="note">Generated: Feb 16, 2026 — Visualizations and observations summarizing relationships between health, region, demographics, and utilization.</p>
+
+  <h2>Library choice</h2>
+  <p>Plots produced with Matplotlib + Seaborn for flexible, publication-quality statistical graphics.</p>
+
+  <h2>Week 3: Health & Region</h2>
+  <div class="grid">
+    <div class="plot">
+      <h3>Counts: Health by Region (heatmap)</h3>
+      <img src="plots/heatmap_health_region_counts.png" alt="Heatmap Health x Region Counts">
+    </div>
+    <div class="plot">
+      <h3>Proportion of Health by Region (stacked)</h3>
+      <img src="plots/stacked_health_by_region_prop.png" alt="Stacked Health by Region Proportion">
+    </div>
+  </div>
+
+  <h2>Week 4: Numerical Analysis & Correlation</h2>
+  <div class="grid">
+    <div class="plot">
+      <h3>Correlation matrix (numeric variables)</h3>
+      <img src="plots/correlation_heatmap.png" alt="Correlation Heatmap">
+    </div>
+    <div class="plot">
+      <h3>Age distribution</h3>
+      <img src="plots/age_distribution.png" alt="Age distribution">
+    </div>
+    <div class="plot">
+      <h3>Income distribution</h3>
+      <img src="plots/income_distribution.png" alt="Income distribution">
+    </div>
+    <div class="plot">
+      <h3>Visits by Health (boxplot)</h3>
+      <img src="plots/visits_by_health_boxplot.png" alt="Visits by Health Boxplot">
+    </div>
+  </div>
+
+  <h2>Key Observations (summary)</h2>
+  <ul>
+    <li><strong>Health:</strong> Most records labeled <em>average</em>. <em>Poor</em> health groups have higher mean visits and higher mean age.</li>
+    <li><strong>Income:</strong> Mean income is higher for <em>excellent</em> health groups than for <em>poor</em> groups.</li>
+    <li><strong>Utilization:</strong> <em>Poor</em> health shows higher health service utilization (visits, emergency/hospital associations).</li>
+    <li><strong>Correlations:</strong> Moderate positive correlation between <code>hospital</code> and <code>emergency</code> visits; other correlations are weaker.</li>
+  </ul>
+
+  <h2>Files & further steps</h2>
+  <p>Saved plots are in the <strong>plots/</strong> folder. CSV pivot tables and summaries are available as CSV files in the project root.</p>
+  <p>If you want a PDF report, I can convert this HTML to PDF next.</p>
+</body>
+</html>
